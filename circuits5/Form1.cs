@@ -16,5 +16,33 @@ namespace circuits5
         {
             InitializeComponent();
         }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            double Total;
+
+            Total = res1ser1.Text * res2ser1.Text;
+            ser1total.Text = Total.ToString("0");
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
