@@ -24,11 +24,39 @@ namespace circuits5
 
         private void Button1_Click(object sender, EventArgs e)
         {
+
             double Total;
 
             Total = res1ser1.Text * res2ser1.Text;
             ser1total.Text = Total.ToString("0");
-        }
+            // define varibles for calculation 
+            
+            try
+            {
+                Total = double.Parse(res1ser1.Text);
+
+            }
+           catch
+            {
+                MessageBox.Show("Error inputting res1ser1 value");
+                    
+            }
+            try
+            {
+                Total = double.Parse(res2ser1);
+            }
+            catch
+            {
+                MessageBox.Show("Error inputting res2ser1 value");
+            }
+            try
+            {
+                Total = double.Parse(res3parallel1);
+            }
+            catch
+            {
+                MessageBox.Show("Error inputting res3parallel1 value");
+            }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
