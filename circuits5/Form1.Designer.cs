@@ -108,7 +108,7 @@
             this.res1ser1.Name = "res1ser1";
             this.res1ser1.Size = new System.Drawing.Size(95, 20);
             this.res1ser1.TabIndex = 2;
-            this.res1ser1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+//            this.res1ser1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // button1
             // 
@@ -129,7 +129,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+//            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // tabPage2
             // 

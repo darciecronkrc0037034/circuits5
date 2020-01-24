@@ -25,38 +25,39 @@ namespace circuits5
         private void Button1_Click(object sender, EventArgs e)
         {
 
-            double Total;
 
-            Total = res1ser1.Text * res2ser1.Text;
-            ser1total.Text = Total.ToString("0");
+
+
             // define varibles for calculation 
-            
+            double ResistorR1, ResistorR2, Total;
+
             try
             {
-                Total = double.Parse(res1ser1.Text);
+                ResistorR1 = double.Parse(res1ser1.Text);
 
             }
-           catch
+            catch
             {
                 MessageBox.Show("Error inputting res1ser1 value");
-                    
+                ResistorR1 = 0.0;
+
             }
             try
             {
-                Total = double.Parse(res2ser1);
+                ResistorR2 = double.Parse(res2ser1.Text);
             }
             catch
             {
                 MessageBox.Show("Error inputting res2ser1 value");
+                ResistorR2 = 0.0;
             }
-            try
-            {
-                Total = double.Parse(res3parallel1);
-            }
-            catch
-            {
-                MessageBox.Show("Error inputting res3parallel1 value");
-            }
+
+            //Calculate total resistor value
+            Total = ResistorR1 + ResistorR2;
+
+            //Show solution on the sreeen
+            label1.Text = Total + " ohms";
+        }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
